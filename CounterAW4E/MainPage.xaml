@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CounterAW4E.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="Hello, World!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                x:Name="Counter"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click plus or subtracts from the number if you click minus"/>
+
+            <Button
+                x:Name="CounterPlusBtn"
+                Text="+" 
+                SemanticProperties.Hint="Adds to the counter"
+                Clicked="OnCounterPlusClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="CounterMinusBtn"
+                Text="-" 
+                SemanticProperties.Hint="Subtracts from the counter"
+                Clicked="OnCounterMinusClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
