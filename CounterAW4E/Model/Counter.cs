@@ -34,16 +34,16 @@ namespace CounterAW4E.Model
 
         public Counter()
         {
-            IncreaseCommand = new Command(Increse);
-            DecreaseCommand = new Command(Decrese);
+            IncreaseCommand = new Command(Increase);
+            DecreaseCommand = new Command(Decrease);
         }
 
-        private void Increse()
+        private void Increase()
         {
             Value++;
         }
 
-        private void Decrese()
+        private void Decrease()
         {
             Value--;
         }
