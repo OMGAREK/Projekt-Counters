@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CounterAW4E")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+4a726642cf45db3f226fda557923276b6b5213e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("CounterAW4E")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CounterAW4E")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

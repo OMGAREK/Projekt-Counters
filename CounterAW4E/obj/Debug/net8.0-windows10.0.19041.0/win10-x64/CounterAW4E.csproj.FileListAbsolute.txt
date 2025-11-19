@@ -355,3 +355,4 @@ C:\Users\arkad\source\repos\CounterAW4E\CounterAW4E\obj\Debug\net8.0-windows10.0
 C:\Users\arkad\source\repos\CounterAW4E\CounterAW4E\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\arkad\source\repos\CounterAW4E\CounterAW4E\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Management.Deployment.Projection.dll
 C:\Users\arkad\source\repos\CounterAW4E\CounterAW4E\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.outputs
+C:\Users\arkad\source\repos\CounterAW4E\CounterAW4E\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CounterAW4E.sourcelink.json

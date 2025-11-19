@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CounterAW4E.Views.CounterPage"
+    xmlns:viewmodels="clr-namespace:CounterAW4E.ViewModel"
+    Title="CounterPage">
+
+    <ContentPage.BindingContext>
+        <viewmodels:CounterViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout>
+        <Label Text="Counters" FontSize="28" HorizontalOptions="Center" />
+        <VerticalStackLayout Spacing="8" HorizontalOptions="Center" >
+            <Entry Placeholder="Enter counter name" Text="{Binding NewCounterName}" HorizontalOptions="FillAndExpand" />
+            <Button Text="Add" Command="{Binding AddCounterCommand}" />
+        </VerticalStackLayout>
+
+        <CollectionView ItemsSource="{Binding Counters}" HorizontalOptions="Center" >
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Label Text="{Binding Name}" HorizontalOptions="Center"/>
+                        <Label Text="{Binding Value}" HorizontalOptions="Center"/>
+                        <HorizontalStackLayout HorizontalOptions="Center">
+                            <Button Text="-" Command="{Binding DecreaseCommand}" />
+                            <Button Text="+" Command="{Binding IncreaseCommand}" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>
